@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="./../css/cad_maquina.css">
+    <link rel="stylesheet" href="../css/navbar_sistema2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="sortcut icon" href="../imagens/icone_aviao.png" />
+    <title>Cadastro Máquina</title>
+</head>
+
+<body>
+    <div class="site_cad_maquina">
+        <header>
+            <div class="header_mobile">
+                <div class="grid_mobile">
+                    <a href=""><img src="../imagens/TOWER_TECH.png" alt=""></a>
+                    <i id="menu" onclick="mudar_icone()" class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="header_desktop">
+                <div class="grid_desktop">
+                    <div class="primeira_div">
+                        <img src="../imagens/TOWER_TECH.png" alt="">
+                        <img class="img_usuario"
+                            src="../imagens/Danilo.png"
+                            alt="" class="fernanda">
+                        <h3>Bem Vindo(a), X!</h3>
+                    </div>
+                    <div class="cadastro">
+                        <h5>CADASTRO</h5>
+                        <Button>Cadastrar máquina</Button>
+                    </div>
+                    <div class="localizacao">
+                        <h5>LOCALIZAÇÃO</h5>
+                        <div class="scrollLocalizacao">
+                            <div onclick="abrir_menu_maquinas()" class="torres">
+                                <div class="a1">
+                                    <h3>Torre Congonhas</h3>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="torres">
+                                <div class="a1">
+                                    <h3>Torre Congonhas</h3>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                                <div class="maquinas">
+                                    <h3>Maquina 1</h3>
+                                </div>
+                                <div class="maquinas">
+                                    <h3>Maquina 2</h3>
+                                </div>
+                                <div class="maquinas">
+                                    <h3>Maquina 3</h3>
+                                </div>
+                            </div>
+                            <div class="torres">
+                                <div class="a1">
+                                    <h3>Torre Congonhas</h3>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="torres">
+                                <div class="a1">
+                                    <h3>Torre Congonhas</h3>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="torres">
+                                <div class="a1">
+                                    <h3>Torre Congonhas</h3>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="torres">
+                                <div class="a1">
+                                    <h3>Torre Congonhas</h3>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="torres">
+                                <div class="a1">
+                                    <h3>Torre Congonhas</h3>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="torres">
+                                <div class="a1">
+                                    <h3>Torre Congonhas</h3>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="torres">
+                                <div class="a1">
+                                    <h3>Torre Congonhas</h3>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="index.html"><i class="fas fa-sign-out-alt"></i></a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <form id="cad-maquina" action="">
+                <h2>CADASTRE SUAS MÁQUINAS</h2>
+                <div class="inputs_cadastro_maq">
+                    <div class="inputs_cadastro_maq_divs">
+                        <input name="name_marca" placeholder="Marca" class="inputs" id="id_marca" type="text">
+                        <input name="name_nmr_serie" placeholder="Número de série" class="inputs" id="id_nmr_serie"
+                            type="number">
+                        <input name="name_mem_ram" placeholder="Capacidade RAM" class="inputs" id="id_ram"
+                            type="number"><br>
+                        <select class="inputs" name="Torre" id="id_torre">
+                            <option class="option" value="">---Torre---</option>
+                            <option class="option" value="Torre_Congonhas">Torre Congonhas</option>
+                            <option class="option" value="Torre_Galeão">Torre Galeão</option>
+                            <option class="option" value="Torre_Viracopos">Torre Viracopos</option>
+                            <option class="option" value="Torre_Sanstos_Dumont">Torre Santos Dumont</option>
+                        </select>
+                    </div>
+                    <div class="inputs_cadastro_maq_divs">
+                        <input name="name_modelo" placeholder="Modelo" class="inputs" id="id_modelo" type="text">
+                        <input name="name_cpu" placeholder="Capacidade CPU" class="inputs" id="id_cpu" type="text">
+                        <input name="name_disco" placeholder="Capacidade Disco" class="inputs" id="id_disco"
+                            type="number">
+                        <div class="botao">
+                            <button>Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+<script src="../JS/cad_maquina.js"></script>
+
+</html>

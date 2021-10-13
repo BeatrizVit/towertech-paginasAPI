@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/header_footer.css" />
+        <link rel="stylesheet" href="../css/contato.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="conteiner">
+                <div class="logoMenu">
+                    <img id="imglogo" src="../imagens/logo.png" />
+                    <img id="imgLogoX" src="../imagens/icon_menu_fechar.png" />
+                </div>
+                <div class="menu">
+                    <img src="../imagens/icon_menu.png" id="iconMenu" />
+                    <ul>
+                        <li>HOME</li>
+                        <li>CONTATO</li>
+                        <li>LOGIN</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <!-- Seção do Contato -->
+            <div class="container__section-contato">
+                <form class="section-contato__formulario" action="">
+                    <span class="fonte-padrao titulo">Entre em contato</span>
+                    <p class="fonte-padrao texto">
+                        Procurando por um sistema para monitorar
+                        <br />
+                        a torre de controle aéreo?
+                    </p>
+                    <input
+                        id="foda"
+                        class="formulario__input-tipo"
+                        placeholder="Nome"
+                    />
+                    <br />
+                    <input
+                        class="formulario__input-tipo"
+                        placeholder="E-mail"
+                    />
+                    <br />
+                    <input
+                        class="formulario__input-tipo"
+                        placeholder="Companhia aérea"
+                    />
+                    <br />
+                    <textarea
+                        class="formulario__input-tipo input-tipo2"
+                        cols="30"
+                        rows="10"
+                        placeholder="Mensagem"
+                    ></textarea>
+                    <br />
+                    <input
+                        class="formulario__btn-submit"
+                        type="submit"
+                        value="ENVIAR"
+                    />
+                </form>
+            </div>
+            <!-- Seção do FAQ -->
+            <div class="container__section-faq">
+                <div class="section-faq">
+                    <span class="fonte-padrao titulo">F.A.Q</span>
+                    <br />
+                    <!-- Pergunta 1 -->
+                    <span class="fonte-padrao titulo2">
+                        <img
+                            id="imagem1"
+                            src="../imagens/open_button.png"
+                            onclick="alterVisibility('reposta1', 'imagem1')"
+                        />
+                        Como entrar em contato com a Tower Tech?
+                    </span>
+                    <div class="resposta" id="reposta1" style="display: none">
+                        <span class="font-padrao texto">
+                            Basta nos enviar uma mensagem através o formulário
+                            desta página.
+                        </span>
+                    </div>
+                    <!-- Pergunta 2 -->
+                    <span class="fonte-padrao titulo2">
+                        <img
+                            id="imagem2"
+                            src="../imagens/open_button.png"
+                            onclick="alterVisibility('reposta2', 'imagem2')"
+                        />
+                        Qual o endereço da Tower Tech?
+                    </span>
+                    <div class="resposta" id="reposta2" style="display: none">
+                        <span class="font-padrao texto">
+                            Nossa empresa fica localizada na Rua Haddock Lobo,
+                            595 - São Paulo.
+                        </span>
+                    </div>
+                    <!-- Pergunta 3 -->
+                    <span class="fonte-padrao titulo2">
+                        <img
+                            id="imagem3"
+                            src="../imagens/open_button.png"
+                            onclick="alterVisibility('reposta3', 'imagem3')"
+                        />
+                        O sistema tem uma hierarquia de visualização de
+                        informações?
+                    </span>
+                    <div class="resposta" id="reposta3" style="display: none">
+                        <span class="font-padrao texto">
+                            Sim, o nosso sistema tem permissões, para analistas
+                            e administradores,
+                        </span>
+                        <br />
+                        <span class="font-padrao texto">
+                            essas permissões dão acesso a um dashboard
+                            diferente.
+                        </span>
+                    </div>
+                    <!-- Pergunta 4 -->
+                    <span class="fonte-padrao titulo2">
+                        <img
+                            id="imagem4"
+                            src="../imagens/open_button.png"
+                            onclick="alterVisibility('reposta4', 'imagem4')"
+                        />
+                        Há possibilidade de monitorar e/ou analisar novos
+                        componentes?
+                    </span>
+                    <div class="resposta" id="reposta4" style="display: none">
+                        <span class="font-padrao texto">
+                            Sim, mas para isso é necessário entrar em contato
+                            conosco para
+                        </span>
+                        <br />
+                        <span class="font-padrao texto">
+                            sabermos melhor sobre as suas necessidades.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Seção do Mapa -->
+            <div class="container__section-mapa"></div>
+        </div>
+
+        <footer class="footer">
+            Todos os direitro reservados - Tower Tech 2021 ©
+        </footer>
+    </body>
+</html>
+<script>
+    function alterVisibility(answerId, imageId) {
+        const currentAnswerId = document.getElementById(answerId);
+        const currentImageId = document.getElementById(imageId);
+
+        if (currentAnswerId.style.display == "none") {
+            currentAnswerId.style.display = "block";
+            currentImageId.src = "../imagens/subtract_button.png";
+        } else {
+            currentAnswerId.style.display = "none";
+            currentImageId.src = "../imagens/open_button.png";
+        }
+    }
+</script>

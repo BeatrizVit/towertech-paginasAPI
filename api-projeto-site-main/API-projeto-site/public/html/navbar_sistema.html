@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/navbar_sistema.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header></header>
+        <footer></footer>
+        <div class="container">
+            <div class="container__navbar">
+                <div class="header-auxiliar">
+                    <img
+                        class="navbar__btn-menu-hamburguer"
+                        id="view-menu-hamburguer"
+                        src="../imagens/icon_menu_fechar.png"
+                        onclick="alterNavbarVisibility()"
+                        alt="Menu Hamburguer"
+                    />
+                </div>
+                <div class="navbar" id="view-navbar">
+                    <div class="navbar__sessao-usuario">
+                        <img class="logo" src="../imagens/TOWER_TECH.png" />
+                        <img
+                            class="sessao-usuario__imagem-perfil"
+                            src="../imagens/imagem-branca-grande.png"
+                        />
+                        <h1 class="navbar-font">Bem vindo, X!</h1>
+                    </div>
+                    <hr />
+                    <div class="navbar__sessao-cadastro">
+                        <h1 class="navbar-font">CADASTRO</h1>
+                        <button
+                            class="
+                                sessao-cadastro__btn-cadastrar
+                                navbar-btn-font
+                            "
+                        >
+                            Cadastrar funcionário
+                        </button>
+                    </div>
+                    <hr />
+                    <div
+                        id="view_lista_componentes"
+                        class="navbar__sessao-componentes"
+                    >
+                        <h1 class="navbar-font">LOCALIZAÇÃO</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    // TODO: Codigo Temporario abaixo
+    function addNewComponent(componentName) {
+        document.getElementById("view_lista_componentes").innerHTML +=
+            "<button class='sessao-componentes__btn-torre navbar-btn-font'>" +
+            `${componentName}` +
+            "</button>";
+    }
+
+    window.onload = () => {
+        addNewComponent("Torre Congonhas");
+        addNewComponent("Torre Galeão");
+        addNewComponent("Torre Viracopos");
+        addNewComponent("Torre Santos Dumont");
+        addNewComponent("Torre Guarulhos");
+        addNewComponent("Torre Brasília ");
+    };
+
+    function alterNavbarVisibility() {
+        const navbar = document.getElementById("view-navbar");
+
+        console.log(navbar.classList.value);
+
+        if (navbar.classList.value === "navbar") {
+            navbar.classList.value = "navbar-disabilitada";
+            document.getElementById("view-menu-hamburguer").src =
+                "../imagens/icon_menu.png";
+        } else if (navbar.classList.value === "navbar-disabilitada") {
+            navbar.classList.value = "navbar";
+            document.getElementById("view-menu-hamburguer").src =
+                "../imagens/icon_menu_fechar.png";
+        }
+    }
+</script>

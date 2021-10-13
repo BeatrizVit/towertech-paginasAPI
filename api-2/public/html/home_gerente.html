@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/reset.css" />
+    <link rel="stylesheet" href="../css/navbar_sistema.css">
+    <link rel="stylesheet" href="../css/dash_gerente.css">
+    <link rel="sortcut icon" href="../imagens/avião_icon.png" />
+    <script type="text/javascript" src="../funcoes.js"></script>
+    <title>Home Gerente</title>
+</head>
+<body>
+    
+    <div class="container__torres">
+        <div class="titulo">
+            <h1>ALERTAS</h1>
+        </div>
+
+        <div class="torres">
+            <div class="torres__linha_um">
+                <div class="torres__equipe" id="vermelho">
+                    <h3 id="congonhas">Equipe Congonhas</h3>
+                    <span>Localização: São Paulo - SP</span>
+                    <span>Monitorando: Performance da equipe</span>
+                </div>
+    
+                <div class="torres__equipe" id="vermelho">
+                    <h3>Equipe Galeão</h3>
+                    <span>Localização: Rio de Janeiro - RJ</span>
+                    <span>Monitorando: Performance da equipe</span>
+                </div>
+    
+                <div class="torres__equipe" id="vermelho">
+                    <h3>Equipe Viracopos</h3>
+                    <span>Localização: Campinas - SP</span>
+                    <span>Monitorando: Performance da equipe</span>
+                </div>
+            </div>
+            
+            <div class="torres__linha_dois">
+                <div class="torres__equipe" id="laranja">
+                    <h3 id="santos_dumont">Equipe Santos Dumont</h3>
+                    <span>Localização: Rio de Janeiro - RJ</span>
+                    <span>Monitorando: Performance da equipe</span>
+                </div>
+    
+                <div class="torres__equipe" id="laranja">
+                    <h3>Equipe Guarulhos</h3>
+                    <span>Localização: São Paulo - SP</span>
+                    <span>Monitorando: Performance da equipe</span>
+                </div>
+    
+                <div class="torres__equipe" id="laranja">
+                    <h3>Equipe Brasília</h3>
+                    <span>Localização: Brasília - DF</span>
+                    <span>Monitorando: Performance da equipe</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
+
+<script>
+
+    verificar_autenticacao()
+
+    // TODO: Codigo Temporario abaixo
+    function addNewComponent(componentName) {
+        document.getElementById("view_lista_componentes").innerHTML +=
+            "<button class='sessao-componentes__btn-torre navbar-btn-font'>" +
+            `${componentName}` +
+            "</button>";
+    }
+
+    window.onload = () => {
+        addNewComponent("Torre Congonhas");
+        addNewComponent("Torre Galeão");
+        addNewComponent("Torre Viracopos");
+        addNewComponent("Torre Santos Dumont");
+        addNewComponent("Torre Guarulhos");
+        addNewComponent("Torre Brasília ");
+    };
+
+    function alterNavbarVisibility() {
+        const navbar = document.getElementById("view-navbar");
+
+        console.log(navbar.classList.value);
+
+        if (navbar.classList.value === "navbar") {
+            navbar.classList.value = "navbar-disabilitada";
+            document.getElementById("view-menu-hamburguer").src =
+                "../imagens/icon_menu.png";
+        } else if (navbar.classList.value === "navbar-disabilitada") {
+            navbar.classList.value = "navbar";
+            document.getElementById("view-menu-hamburguer").src =
+                "../imagens/icon_menu_fechar.png";
+        }
+    }
+</script>

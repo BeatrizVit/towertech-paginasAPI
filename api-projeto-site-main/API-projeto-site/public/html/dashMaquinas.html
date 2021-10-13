@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/dashMaquinas.css">
+        <title>Gráfico Maquinas</title>
+    </head>
+    <body>
+                <div class="container__maquina">
+                    <div class="container_nomeMaq">
+                        <div class="nome__maquina"> 
+                            <h2>MÁQUINA <span>1</span></h2>
+                        </div>
+                    </div>
+
+                
+                    <div class="graficos__linha1">
+                        <div class="grafico__cpu">
+                            <h3>GRÁFICO CPU - TEMPO REAL <span> 45%</span></h3> 
+                
+                        </div>
+                            <div class="grafico__disco">
+                                <h3>GRÁFICO DISCO - TEMPO REAL <span>44%</span></h3> 
+                
+                            </div>
+                    </div>
+                
+                
+                    <div class="graficos__linha2">
+                        <div class="grafico__ram">
+                            <h3>GRÁFICO MÉMORIA RAM - TEMPO REAL <span>70%</span></h3>
+                
+                        </div>
+        
+                        <div class="dados__adicionais">
+                            <div class="conexao__internet">
+                                <p>Internet: <span>Conectada</span></p>
+                            </div>
+                    
+                            <div class="usuario">
+                                <p>Usuário: <span>Robson</span></p>
+                            </div>
+                    
+                            <div class="botao__abrir-chamado">
+                                <button onclick="abrir_chamado()" id="botao__abrir-chamado">Abrir chamado</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+    </body>
+</html>
+            
+               
+    </body>
+</html>
+<script>
+    // TODO: Codigo Temporario abaixo
+    function addNewComponent(componentName) {
+        document.getElementById("view_lista_componentes").innerHTML +=
+            "<button class='sessao-componentes__btn-torre navbar-btn-font'>" +
+            `${componentName}` +
+            "</button>";
+    }
+
+    window.onload = () => {
+        addNewComponent("Torre Congonhas");
+        addNewComponent("Torre Galeão");
+        addNewComponent("Torre Viracopos");
+        addNewComponent("Torre Santos Dumont");
+        addNewComponent("Torre Guarulhos");
+        addNewComponent("Torre Brasília ");
+    };
+
+    function alterNavbarVisibility() {
+        const navbar = document.getElementById("view-navbar");
+
+        console.log(navbar.classList.value);
+
+        if (navbar.classList.value === "navbar") {
+            navbar.classList.value = "navbar-disabilitada";
+            document.getElementById("view-menu-hamburguer").src =
+                "../imagens/icon_menu.png";
+        } else if (navbar.classList.value === "navbar-disabilitada") {
+            navbar.classList.value = "navbar";
+            document.getElementById("view-menu-hamburguer").src =
+                "../imagens/icon_menu_fechar.png";
+        }
+    }
+</script>

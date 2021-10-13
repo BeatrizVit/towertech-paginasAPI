@@ -1,0 +1,206 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+}
+
+.menu_aberto {
+    width: 328px;
+    background-color: #9BB0D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.grid_desktop {
+    width: 90%;
+    display: flex;
+    height: 95%;
+    flex-direction: column;
+}
+
+
+.primeira_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    justify-content: space-around;
+    color: white;
+}
+
+.primeira_div img {
+    margin-bottom: 4%;
+}
+
+.img_usuario {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.cadastro {
+    margin-top: 4%;
+    height: 65px;
+    width: 100%;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro button {
+    height: 40px;
+    width: 100%;
+    background-color: #F89941;
+    font-weight: bolder;
+    border: none;
+    margin-top: 2%;
+}
+
+h5 {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1.5%;
+}
+
+.localizacao {
+    height: 54%;
+    border-top: solid 1px white;
+    margin-top: 7%;
+}
+
+.localizacao button {
+    height: 40px;
+    width: 100%;
+    background: #CBD8EC;
+    font-weight: bolder;
+    border: none;
+    margin: 5px 0px 0px 0px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: start;
+    padding-left: 13px;
+    font-size: 1.3rem;
+}
+
+.scrollLocalizacao {
+    overflow: auto;
+    height: 85%;
+    margin-top: 2%;
+}
+
+.scrollLocalizacao::-webkit-scrollbar {
+    display: none;
+}
+
+.torres {
+    height: 40px;
+    padding: 4%;
+    background-color: #CBD8EC;
+    margin-bottom: 2%;
+}
+
+.a1 {
+    /* height: 40px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.torres h3,
+.fas fa-angle-down {
+    font: bolder;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.maquinas {
+    display: none;
+    background-color: #E6E9EF;
+    height: 40px;
+}
+
+.grid_desktop i {
+    float: right;
+    font-size: 20px;
+    color: white;
+}
+
+.header_mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .grid i {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .localizacao {
+        height: 36rem;
+    }
+
+    .menu_aberto {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .menu_aberto {
+        max-width: 100vw;
+        text-align: -webkit-center;
+        /* height: auto; */
+        display: none;
+    }
+
+    .menu{
+        width: 100wv;
+        height: 60px;
+        background-color: #32496F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .he-grid{
+        width: 80%; 
+        height: 100%; 
+        display: flex;    
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo_menu {
+        width: 9rem;    
+    }
+
+    .menu_fechado{   
+        width: 15%; 
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #iconMenu{
+        width: 25px;
+        display: block;
+    }
+
+    .menu_fechado ul{
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+
+
+}

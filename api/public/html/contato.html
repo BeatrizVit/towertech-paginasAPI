@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/contato.css" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="sortcut icon" href="../imagens/icone_aviao.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="../JS/navbar.js"></script>
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="he-grid">
+                <div class="logo_menu">
+                    <img src="../imagens/TOWER_TECH.png" />
+                </div>
+                <div class="menu_fechado">
+                    <img src="../imagens/icone_menu.png" id="iconMenu" onclick="abrirMenu()" />
+                    <ul>
+                        <li><a href="../html/index.html">HOME</a></li>
+                        <li><a href="../html/contato.html">CONTATO</a></li>
+                        <li><a href="../html/login.html">LOGIN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_aberto">
+            <ul>
+                <li><a href="../html/index.html">HOME</a></li>
+                <li><a href="../html/contato.html">CONTATO</a></li>
+                <li><a href="../html/login.html">LOGIN</a></li>
+            </ul>
+            <div>
+
+            </div>
+        </div>
+    </header>
+    <div class="principal">
+        <div class="banner">
+            <div class="formulario">
+                <h1>Entre em contato</h1>
+                <h3>Procurando por um sistema para monitorar a torre de controle aéreo?</h3>
+                <form action="" method="get">
+                    <div class="inputs">
+                        <div class="input">
+                            <input type="text" name="nome" required>
+                            <label for="nome">Nome</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="email" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="companhia-aerea" required>
+                            <label for="companhia-aerea">Companhia aérea</label>
+                        </div>
+                        <div class="input">
+                            <textarea name="mensagem" cols="30" rows="10" required></textarea>
+                            <label for="mensagem">Mensagem</label>
+                        </div>
+                    </div>
+                    <button>ENVIAR</button>
+                </form>
+            </div>
+            <div class="faq">
+                <div class="faq_div">
+                    <h1>F.A.Q.</h1>
+
+                    <div class="perguntasFrequentes">
+                        <div class="pergunta">
+                            <i class="fas fa-plus-circle"></i>
+                            <h3>Como entrar em contato com a Tower Tech?</h3>
+                        </div>
+                        <div class="pergunta">
+                            <i class="fas fa-plus-circle"></i>
+                            <h3>Qual o endereço da Tower Tech?</h3>
+                        </div>
+                        <div class="pergunta">
+                            <i class="fas fa-plus-circle"></i>
+                            <h3>O sistema tem uma hierarquia de visualização de informações?</h3>
+                        </div>
+                        <div class="pergunta">
+                            <i class="fas fa-plus-circle"></i>
+                            <h3>Há possibilidade de monitorar e/ou analisar novos componentes?</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="googlemaps"></div>
+    </div>
+    <footer class="footer">
+        Todos os direitro reservados - Tower Tech 2021 ©
+    </footer>
+</body>
+
+</html>
+<script>
+    function alterVisibility(answerId, imageId) {
+        const currentAnswerId = document.getElementById(answerId);
+        const currentImageId = document.getElementById(imageId);
+
+        if (currentAnswerId.style.display == "none") {
+            currentAnswerId.style.display = "block";
+            currentImageId.src = "../imagens/subtract_button.png";
+        } else {
+            currentAnswerId.style.display = "none";
+            currentImageId.src = "../imagens/open_button.png";
+        }
+    }
+</script>

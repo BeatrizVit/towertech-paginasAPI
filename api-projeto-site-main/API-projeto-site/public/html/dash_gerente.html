@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/reset.css" />
+    <link rel="stylesheet" href="../css/dash_gerente.css">
+    <link rel="sortcut icon" href="../imagens/avião_icon.png" />
+    <link rel="stylesheet" href="../css/navbar_sistema2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Dashboard Gerente</title>
+</head>
+
+<body>
+    <div class="site_dashboard_gerente">
+        <header>
+            <div class="menu">
+              <div class="he-grid">
+                <div class="logo_menu">
+                  <img src="../imagens/TOWER_TECH.png" />
+                </div>
+                <div class="menu_fechado">
+                  <img src="../imagens/icone_menu.png" id="menu" onclick="abrirMenuSistema()" />
+                </div>
+              </div>
+            </div>
+      
+            <div class="header_desktop">
+              <div class="grid_desktop">
+                <div class="primeira_div">
+                  <img
+                    src="../imagens/TOWER_TECH.png"
+                    id="logo_menu_desktop"
+                    alt=""
+                  />
+                  <img
+                    class="img_usuario"
+                    src="../imagens/Fernanda.png"
+                    alt=""
+                    class="fernanda"
+                  />
+                  <h3 id="nome">Bem Vindo(a), X!</h3>
+                </div>
+                <div class="cadastro">
+                  <h5>CADASTRO</h5>
+                  <button onclick="redirecionar_cadastro()">Cadastrar funcionário</button>
+                </div>
+                <div class="localizacao">
+                  <h5>LOCALIZAÇÃO</h5>
+                  <div class="scrollLocalizacao">
+                    <div onclick="abrir_menu_maquinas()" class="torres">
+                      <div class="a1">
+                        <h3>Torre Congonhas</h3>
+                      </div>
+                    </div>
+                    <div class="torres">
+                      <div class="a1">
+                        <h3>Torre Congonhas</h3>
+                      </div>
+                      <div class="maquinas">
+                        <h3>Maquina 1</h3>
+                      </div>
+                      <div class="maquinas">
+                        <h3>Maquina 2</h3>
+                      </div>
+                      <div class="maquinas">
+                        <h3>Maquina 3</h3>
+                      </div>
+                    </div>
+                    <div class="torres">
+                      <div class="a1">
+                        <h3>Torre Congonhas</h3>
+                      </div>
+                    </div>
+                    <div class="torres">
+                      <div class="a1">
+                        <h3>Torre Congonhas</h3>
+                      </div>
+                    </div>
+                    <div class="torres">
+                      <div class="a1">
+                        <h3>Torre Congonhas</h3>
+                      </div>
+                    </div>
+                    <div class="torres">
+                      <div class="a1">
+                        <h3>Torre Congonhas</h3>
+                      </div>
+                    </div>
+                    <div class="torres">
+                      <div class="a1">
+                        <h3>Torre Congonhas</h3>
+                      </div>
+                    </div>
+                    <div class="torres">
+                      <div class="a1">
+                        <h3>Torre Congonhas</h3>
+                      </div>
+                    </div>
+                    <div class="torres">
+                      <div class="a1">
+                        <h3>Torre Congonhas</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="index.html"><i class="fas fa-sign-out-alt"></i></a>
+              </div>
+            </div>
+          </header>
+        <div class="container__dashboard">
+            <div class="nome_equipe">
+                <h1>EQUIPE - TORRE CONGONHAS</h1>
+            </div>
+
+            <div class="graficos">
+                <div class="grafico_anual">
+                    <div class="container_grafico_barra_mensal">
+                        <h3>Quantidade de Chamados Mensais</h3>
+                        <canvas id="grafico_barra_mensal"></canvas>
+                    </div>
+                </div>
+
+                <div class="grafico_turno">
+                    <div class="container_grafico_barra_turno">
+                        <h3>Quantidade de Chamados por Turno</h3>
+                        <canvas id="grafico_barra_turno"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="historico">
+                <h3>HISTÓRICO DE CHAMADOS</h3>
+                <div class="grid_chamados">
+                    <div class="chamado" id="aberto">
+                        <span><b>Localização:</b> Torre Congonhas</span>
+                        <span><b>Status:</b> Em aberto</span>
+                    </div>
+
+                    <div class="chamado" id="aberto">
+                        <span><b>Localização:</b> Torre Congonhas</span>
+                        <span><b>Status:</b> Em aberto</span>
+                    </div>
+
+                    <div class="chamado" id="aberto">
+                        <span><b>Localização:</b> Torre Guarulhos</span>
+                        <span><b>Status:</b> Em aberto</span>
+                    </div>
+
+                    <div class="chamado" id="aberto">
+                        <span><b>Localização:</b> Torre Guarulhos</span>
+                        <span><b>Status:</b> Em aberto</span>
+                    </div>
+
+                    <div class="chamado" id="aberto">
+                        <span><b>Localização:</b> Torre Guarulhos</span>
+                        <span><b>Status:</b> Em aberto</span>
+                    </div>
+
+                    <div class="chamado" id="aberto">
+                        <span><b>Localização:</b> Torre Congonhas</span>
+                        <span><b>Status:</b> Em aberto</span>
+                    </div>
+
+                    <div class="chamado" id="concluido">
+                        <span><b>Localização:</b> Torre Viracopos</span>
+                        <span><b>Status:</b> Concluido</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    // Grafico chamados anual
+    const barChart = document.getElementById("grafico_barra_mensal").getContext("2d");
+
+    const dataBarChart = {
+        labels: [
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro"
+        ],
+        datasets: [{
+                label: "Quantidade de Chamados Não Finalizados",
+                data: [
+                    30,
+                    13,
+                    15,
+                    23,
+                    15,
+                    63,
+                    45,
+                    20,
+                    30,
+                    39,
+                    20,
+                    5
+                ],
+                backgroundColor: "rgba(133, 24, 42)"
+            },
+            {
+                label: "Quantidade de Chamados Finalizados",
+                data: [
+                    70,
+                    30,
+                    20,
+                    10,
+                    45,
+                    37,
+                    18,
+                    76,
+                    54,
+                    90,
+                    80,
+                    100
+                ],
+                backgroundColor: "rgba(0, 180, 216)"
+            }
+        ]
+    };
+
+    const chartConfiguration = {
+        type: "bar",
+        data: dataBarChart
+    }
+
+    const createBarChart = new Chart(barChart, chartConfiguration);
+
+
+    // Gráfico turnos
+    const barChart2 = document.getElementById("grafico_barra_turno").getContext("2d");
+
+    const dataBarChart2 = {
+        labels: [
+            "Manhã",
+            "Tarde",
+            "Noite"
+        ],
+        datasets: [{
+                label: "Quantidade de Chamados Não Finalizados",
+                data: [
+                    30,
+                    13,
+                    15
+                ],
+                backgroundColor: "rgba(133, 24, 42)"
+            },
+            {
+                label: "Quantidade de Chamados Finalizados",
+                data: [
+                    70,
+                    30,
+                    20
+                ],
+                backgroundColor: "rgba(0, 180, 216)"
+            }
+        ]
+    };
+
+    const chartConfiguration2 = {
+        type: "bar",
+        data: dataBarChart2
+    }
+
+    const createBarChart2 = new Chart(barChart2, chartConfiguration2);
+
+    function redirecionar_cadastro() {
+      window.location = "./cad_funcionario.html";
+    }
+</script>
