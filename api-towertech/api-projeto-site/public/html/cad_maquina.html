@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/reset.css" />
+    <link rel="stylesheet" href="./../css/cad_maquina.css" />
+    <link rel="stylesheet" href="../css/navbar_sistema2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="sortcut icon" href="../imagens/icone_aviao.png" />
+    <script src="../JS/navbar.js"></script>
+    <title>Cadastro Máquina</title>
+  </head>
+
+  <body>
+      <header>
+        <div class="menu">
+          <div class="he-grid">
+            <div class="logo_menu">
+              <img src="../imagens/TOWER_TECH.png" />
+            </div>
+            <div class="menu_fechado">
+              <img
+                src="../imagens/icone_menu.png"
+                id="menu"
+                onclick="abrirMenuSistema()"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="header_desktop">
+          <div class="grid_desktop">
+            <div class="primeira_div">
+              <img
+                src="../imagens/TOWER_TECH.png"
+                id="logo_menu_desktop"
+                alt=""
+              />
+              <img
+                class="img_usuario"
+                src="../imagens/Danilo.png"
+                alt=""
+                class="fernanda"
+              />
+              <h3>Bem Vindo(a), Danilo!</h3>
+            </div>
+            <div class="cadastro">
+              <h5>CADASTRO</h5>
+              <button>Cadastrar máquinas</button>
+            </div>
+            <div class="localizacao">
+              <h5>LOCALIZAÇÃO</h5>
+              <div class="scrollLocalizacao">
+                <div onclick="abrir_menu_maquinas()" class="torres">
+                  <div class="a1">
+                    <h3>Torre Congonhas</h3>
+                  </div>
+                </div>
+                <div class="torres">
+                  <div class="a1">
+                    <h3>Torre Congonhas</h3>
+                  </div>
+                  <div class="maquinas">
+                    <h3>Maquina 1</h3>
+                  </div>
+                  <div class="maquinas">
+                    <h3>Maquina 2</h3>
+                  </div>
+                  <div class="maquinas">
+                    <h3>Maquina 3</h3>
+                  </div>
+                </div>
+                <div class="torres">
+                  <div class="a1">
+                    <h3>Torre Congonhas</h3>
+                  </div>
+                </div>
+                <div class="torres">
+                  <div class="a1">
+                    <h3>Torre Congonhas</h3>
+                  </div>
+                </div>
+                <div class="torres">
+                  <div class="a1">
+                    <h3>Torre Congonhas</h3>
+                  </div>
+                </div>
+                <div class="torres">
+                  <div class="a1">
+                    <h3>Torre Congonhas</h3>
+                  </div>
+                </div>
+                <div class="torres">
+                  <div class="a1">
+                    <h3>Torre Congonhas</h3>
+                  </div>
+                </div>
+                <div class="torres">
+                  <div class="a1">
+                    <h3>Torre Congonhas</h3>
+                  </div>
+                </div>
+                <div class="torres">
+                  <div class="a1">
+                    <h3>Torre Congonhas</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="index.html"><i class="fas fa-sign-out-alt"></i></a>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <form id="cad-maquina" action="">
+          <div class="grid">
+            <h2>CADASTRE SUAS MÁQUINAS</h2>
+            <div class="cm-inputs">
+              <div class="input">
+                <input name="marca" type="text" required/>
+                <label for="marca">Marca</label>
+              </div>
+              <div class="input">
+                <input name="modelo" type="text" required/>
+                <label for="modelo">Modelo</label>
+              </div>
+              <div class="input">
+                <input name="nmr_serie" type="text" required/>
+                <label for="nmr_serie">Número de série</label>
+              </div>
+              <div class="input">
+                <input name="cpu" type="text" required/>
+                <label for="cpu">Nome do processador</label>
+              </div>
+              <div class="input">
+                <input name="mem_ram" type="number" min="0" required/>
+                <label for="mem_ram">Capacidade RAM (Gb)</label>
+              </div>
+              <div class="input">
+                <input name="disco" type="number" min="0" required/>
+                <label for="disco">Capcidade Disco (Gb)</label>
+              </div>
+              <div class="input">
+                <select class="inputs" name="torre" id="id_torre">
+                  <option class="option" value=""></option>
+                  <option class="option" value="Torre_Congonhas">
+                    Torre Congonhas
+                  </option>
+                  <option class="option" value="Torre_Galeão">
+                    Torre Galeão
+                  </option>
+                  <option class="option" value="Torre_Viracopos">
+                    Torre Viracopos
+                  </option>
+                  <option class="option" value="Torre_Sanstos_Dumont">
+                    Torre Santos Dumont
+                  </option>
+                </select>
+                <label for="torre">Torre</label>
+              </div>
+              <button>Enviar</button>
+            </div>
+          </div>
+        </form>
+      </section>
+  </body>
+</html>

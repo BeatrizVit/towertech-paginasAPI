@@ -1,0 +1,266 @@
+body {
+    background-color: #E1E1E1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    display: flex;
+    padding: 2% 0% 2% 2%;
+    justify-content: space-between;
+}
+
+.formulario {
+    width: 591px;
+    height: 490px;
+    background-color: white;
+    border-radius: 3%;
+    padding: 2%;
+    font-size: 0.7rem;
+    box-shadow: inset 1px 1px 3px 2px rgba(0, 0, 0, 0.185);
+}
+
+.formulario h1 {
+    color: #FF7A00;
+    margin-bottom: 2%;
+}
+
+.formulario h3 {
+    margin-bottom: 2%;
+    color: #363636;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario textarea {
+    padding: 2% 0% 0% 2%;
+    height: 100px;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    box-shadow: inset 1px 1px 3px 2px rgba(0, 0, 0, 0.185);
+}
+
+.formulario button {
+    background-color: #FF7A00;
+    border: none;
+    height: 44px;
+    color: white;
+    width: 130px;
+    margin-top: 14%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 1.1rem;
+    align-self: flex-end;
+}
+
+.inputs {
+    width: 110%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.input {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    margin-top: 2%;
+}
+
+.input input {
+    position: relative;
+    box-shadow: inset 1px 1px 3px 2px rgba(0, 0, 0, 0.185);
+    background: #FEFEFE;
+    border-radius: 5px;
+    width: 100%;
+    height: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.021);
+    outline: none;
+    font-size: 1.0rem;
+    padding-left: 9px;
+    transition: .2s;
+    padding-top: 1.0rem;
+}
+
+.input label {
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    font-size: 1.0rem;
+    color: #8C8C8C;
+    transition: .2s;
+}
+
+.input textarea {
+    padding-top: 5%;
+}
+
+.input input:focus~label,
+.input input:valid~label,
+.input textarea:focus~label,
+.input textarea:valid~label {
+    top: 10%;
+    font-size: 0.7rem;
+    color: blue;
+    font-weight: 700;
+}
+
+
+.faq {
+    display: flex;
+    height: 490px;
+    background-image: url(../imagens/ellipse_contato.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 591px;
+    padding: 5% 1% 1% 8%;
+}
+
+.faq_div {
+    width: 100%;
+}
+
+.faq h1 {
+    color: #FF7A00;
+}
+
+.pergunta_div {
+    display: flex;
+    color: white;
+    font-size: 0.8rem;
+    margin: 5% 0% 0% 0%;
+    width: 100%;
+}
+
+.pergunta h3 {
+    margin-left: 3%;
+}
+.pergunta i{
+    font-size: 1rem;
+}
+
+.resposta {
+    font-size: 0.8rem;
+    color: white;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#resposta1_icon_close,
+#resposta2_icon_close,
+#resposta3_icon_close,
+#resposta4_icon_close {
+    display: none;
+}
+
+iframe {
+    width: 100%;
+    height: 228px;
+}
+
+@media (max-width: 1230px) {
+    .formulario {
+        width: 530px;
+    }
+}
+
+@media (max-width: 1173px) {
+    .formulario {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .formulario {
+        width: 470px;
+
+    }
+}
+
+@media (max-width: 1044px) {
+    .faq {
+        padding: 10% 1% 1% 8%;
+        width: auto;
+    }
+
+    .formulario button {
+        margin-top: 18%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 2%;
+    }
+
+    .faq {
+        background-size: cover;
+        margin-top: 4%;
+        width: max-content;
+        width: 100%;
+        padding: 7% 1% 1% 10%;
+    }
+
+    .pergunta {
+        font-size: 0.9rem;
+    }
+
+    .formulario {
+        width: 80%;
+        margin-top: 1%;
+    }
+
+    .formulario button {
+        margin-top: 12%;
+    }
+}
+
+@media (max-width: 425px) {
+    .faq {
+        background-size: cover;
+        margin-top: 4%;
+        width: max-content;
+        width: 100%;
+        padding: 14% 1% 1% 10%;
+    }
+
+    .pergunta {
+        font-size: 0.9rem;
+    }
+
+    .formulario {
+        width: 90%;
+        margin-top: 1%;
+        height: auto;
+        padding: 3%;
+    }
+
+    .formulario button {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 375px) {
+    .formulario {
+        font-size: 0.7rem;
+    }
+
+    .pergunta {
+        font-size: 0.7rem;
+    }
+}

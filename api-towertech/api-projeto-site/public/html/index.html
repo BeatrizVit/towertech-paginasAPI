@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="sortcut icon" href="../imagens/avião_icon.png" />
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="conteiner">
+            <div class="logoMenu">
+                <img id="imglogo" src="../imagens/logo_towertech_branco.png">
+            </div>
+            <div class="menu">
+                <img src="../imagens/icon_menu.png" id="iconMenu" onclick="abrirMenu()">
+                <ul class="lista_menu">
+                    <a href="../html/index.html">
+                        <li class="li_menu">HOME</li>
+                    </a>
+                    <a href="../html/contato.html">
+                        <li class="li_menu">CONTATO</li>
+                    </a>
+                    <a href="../html/login.html">
+                        <li class="li_menu">LOGIN</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu_pequeno">
+            <ul id="lista_menu_pequeno" style="display: none;">
+                <a href="../html/index.html">
+                    <li class="li_menu_pequeno">HOME</li>
+                </a>
+                <a href="../html/contato.html">
+                    <li class="li_menu_pequeno">CONTATO</li>
+                </a>
+                <a href="../html/login.html">
+                    <li class="li_menu_pequeno">LOGIN</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <img src="../imagens/Component 2.png" alt="" class="img_body"
+        style="width: 100%; padding-left: 30px; padding-top: 20px;">
+    <img src="../imagens/Component 4.png" alt="" class="img_body" style="width:90%;">
+
+
+
+
+    <div class="conteiner_body">
+
+
+
+        <div class="titulo">
+            <!-- <img src="../imagens/capa.png" id="img_capa">
+            <img src="../imagens/ellipse_1.png" id="img_ellipse"> -->
+
+        </div>
+        <div class="titulo">
+            <!-- <img src="../imagens/capa.png" id="img_capa">
+            <img src="../imagens/ellipse_1.png" id="img_ellipse"> -->
+
+        </div>
+
+
+        <div class="conteiner_box">
+            <div class="box_card">
+                <div class="card">
+                    <div class="imgs_box">
+                        <img src="../imagens/linkedin.png" alt="" class="img_cards">
+                        <img src="../imagens/beatriz.jpg" class="img_box">
+                        <img src="../imagens/github.png" alt="" class="img_cards">
+                    </div>
+                    <!-- <img src="../imagens/beatriz.jpg" class="img_box"> -->
+                    <h3>Beatriz Vitória</h4>
+                        <h2>FUNDADORA</h2>
+                        <p class="texto_box">“Everybody should learn to program a computer, because it teaches you how
+                            to think ”</p>
+                </div>
+                <div class="card">
+                    <img src="../imagens/flavia.jpg" class="img_box">
+                    <h3>Flavia de Oliveira</h4>
+                        <h2>FUNDADORA</h2>
+                </div>
+                <div class="card">
+                    <img src="../imagens/joao-ruas.jpeg" class="img_box">
+                    <h3>João Ruas</h4>
+                        <h2>FUNDADOR</h2>
+                </div>
+                <div class="card">
+                    <img src="../imagens/lucas.jpg" class="img_box">
+                    <h3>Lucas Henrique</h4>
+                        <h2>FUNDADOR</h2>
+                </div>
+                <div class="card">
+                    <img src="../imagens/rafaela.jpg" class="img_box">
+                    <h3>Rafaela Amancio</h4>
+                        <h2>FUNDADORA</h2>
+                </div>
+                <div class="card">
+                    <img src="../imagens/rodrigo.jpg" class="img_box">
+                    <h3>Rodrigo Hermann</h4>
+                        <h2>FUNDADOR</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Todos os direitro reservados - Tower Tech 2021 ©
+    </footer>
+</body>
+
+</html>
+
+<script>
+    var menuAberto = false;
+
+
+    function abrirMenu() {
+        if (!menuAberto) {
+            iconMenu.src = "../imagens/icon_menu_fechar.png"
+            menuAberto = true
+            lista_menu_pequeno.style.display = "block"
+        } else {
+            iconMenu.src = "../imagens/icon_menu.png"
+            menuAberto = false;
+            lista_menu_pequeno.style.display = "none"
+        }
+    }
+</script>

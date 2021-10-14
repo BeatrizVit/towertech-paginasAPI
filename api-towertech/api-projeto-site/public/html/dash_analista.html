@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/dash_analista.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/navbar_sistema2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="sortcut icon" href="../imagens/icone_aviao.png" />
+    <title>Gráfico Maquinas</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="he-grid">
+                <div class="logo_menu">
+                    <img src="../imagens/TOWER_TECH.png" />
+                </div>
+                <div class="menu_fechado">
+                    <img src="../imagens/icone_menu.png" id="menu" onclick="abrirMenuSistema()" />
+                </div>
+            </div>
+        </div>
+
+        <div class="header_desktop">
+            <div class="grid_desktop">
+                <div class="primeira_div">
+                    <img src="../imagens/TOWER_TECH.png" id="logo_menu_desktop" alt="" />
+                    <img class="img_usuario" src="../imagens/Danilo.png" alt="" class="fernanda" />
+                    <h3>Bem Vindo(a), Danilo!</h3>
+                </div>
+                <div class="cadastro">
+                    <h5>CADASTRO</h5>
+                    <a href="./cad_maquina.html"><button>Cadastrar máquinas</button></a>
+                </div>
+                <div class="localizacao">
+                    <h5>LOCALIZAÇÃO</h5>
+                    <div class="scrollLocalizacao">
+                        <div onclick="abrir_menu_maquinas()" class="torres">
+                            <div class="a1">
+                                <h3>Torre Congonhas</h3>
+                            </div>
+                        </div>
+                        <div class="torres">
+                            <div class="a1">
+                                <h3>Torre Congonhas</h3>
+                            </div>
+                            <div class="maquinas">
+                                <h3>Maquina 1</h3>
+                            </div>
+                            <div class="maquinas">
+                                <h3>Maquina 2</h3>
+                            </div>
+                            <div class="maquinas">
+                                <h3>Maquina 3</h3>
+                            </div>
+                        </div>
+                        <div class="torres">
+                            <div class="a1">
+                                <h3>Torre Congonhas</h3>
+                            </div>
+                        </div>
+                        <div class="torres">
+                            <div class="a1">
+                                <h3>Torre Congonhas</h3>
+                            </div>
+                        </div>
+                        <div class="torres">
+                            <div class="a1">
+                                <h3>Torre Congonhas</h3>
+                            </div>
+                        </div>
+                        <div class="torres">
+                            <div class="a1">
+                                <h3>Torre Congonhas</h3>
+                            </div>
+                        </div>
+                        <div class="torres">
+                            <div class="a1">
+                                <h3>Torre Congonhas</h3>
+                            </div>
+                        </div>
+                        <div class="torres">
+                            <div class="a1">
+                                <h3>Torre Congonhas</h3>
+                            </div>
+                        </div>
+                        <div class="torres">
+                            <div class="a1">
+                                <h3>Torre Congonhas</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="index.html"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container__maquina">
+            <div class="container_nomeMaq">
+                <div class="nome__maquina">
+                    <h2>MÁQUINA <span>1</span></h2>
+                </div>
+            </div>
+
+
+            <div class="graficos__linha1">
+                <div class="grafico__cpu">
+                    <h3>GRÁFICO CPU - TEMPO REAL <span> X%</span></h3>
+
+                </div>
+                <div class="grafico__disco">
+                    <h3>GRÁFICO DISCO - TEMPO REAL <span>X%</span></h3>
+
+                </div>
+            </div>
+
+
+            <div class="graficos__linha2">
+                <div class="grafico__ram">
+                    <h3>GRÁFICO MÉMORIA RAM - TEMPO REAL <span>X%</span></h3>
+
+                </div>
+
+                <div class="dados__adicionais">
+                    <div class="conexao__internet">
+                        <p>Internet: <span>Conectada</span></p>
+                    </div>
+
+                    <div class="usuario">
+                        <p>Usuário: <span>Robson</span></p>
+                    </div>
+
+                    <div class="botao__abrir-chamado">
+                        <button onclick="abrir_chamado()" id="botao__abrir-chamado">Abrir chamado</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="display: none;" class="form_chamado">
+        <form action="">
+            <div class="grid">
+                <h2>ABERTURA DE CHAMADO</h2>
+                <div class="cf-inputs">
+                    <div class="input">
+                        <input type="text" name="nome" required />
+                        <label for="nome">Nome</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="nome" required />
+                        <label for="nome">Nome</label>
+                    </div>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>

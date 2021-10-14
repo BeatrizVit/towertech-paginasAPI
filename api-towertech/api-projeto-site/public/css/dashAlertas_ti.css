@@ -1,0 +1,120 @@
+/*  --------------------------------------------------------  */
+/* dashboard de alertas*/
+body {
+    display: flex;
+}
+
+section {
+    width: calc(100vw - 328px);
+}
+
+.container__alertas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__alertasMaq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.linha_1,
+.linha_2 {
+    display: flex;
+    margin: 1%;
+    padding: 1%;
+    width: 920px;
+    justify-content: space-between;
+}
+
+.maquina__critico {
+    width: 268px;
+    height: 138px;
+    align-items: center;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: red solid 1px;
+    box-shadow: rgba(0, 0, 0, 0.452) 1px 1px 6px 3px;
+}
+
+.nomeMaquina {
+    text-align: center;
+    margin-top: 2%;
+    color: #FF7A00;
+}
+
+.informacoes {
+    font-size: 1.3rem;
+
+}
+
+.div_historico {
+    /* background-color: blanchedalmond; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_historico h1 {
+    color: #FF7A00;
+}
+
+.indice {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.chamados {
+    height: 150px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.chamado {
+    background-color: cornsilk;
+    width: 95%;
+    height: 50px;
+    margin: 0% 0% 0% 0%;
+    /* padding: 0% 8% 0% 7%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+ .chamado h3 {
+    margin: 0% 0% 0% 0%;
+} 
+
+.chamado i {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    section {
+        width: calc(100vw - 270px);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100vw;
+    }
+}

@@ -1,0 +1,158 @@
+/*  --------------------------------------------------------  */
+/*dashboard graficos da máquina*/
+
+body {
+    background-color: #F4F4F4;
+    font-family: sans-serif;
+    display: flex;
+}
+
+section {
+    width: calc(100vw - 328px);
+    display: flex;
+}
+
+.container__maquina {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container_nomeMaq {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3vh;
+}
+
+.nome__maquina {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF7A00;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.nome__maquina h2 {
+    margin: 0;
+}
+
+.graficos__linha1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.graficos__linha2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.grafico__cpu,
+.grafico__disco,
+.grafico__ram {
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #FFFF;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    background-color: #FFFF;
+    width: 43%;
+    height: 250px;
+    padding: 1%;
+}
+
+
+
+.dados__adicionais {
+    width: 46%;
+    position: relative;
+    left: 1rem;
+    bottom: 0.6rem;
+    text-align: end;
+}
+
+
+.conexao__internet {
+    border: 1px solid #CBFFDD;
+    background-color: #CBFFDD;
+
+}
+
+.usuario {
+    border: 1px solid #FF7A00;
+    background-color: #FFFF;
+}
+
+.conexao__internet,
+.usuario {
+    border-radius: 5px;
+    width: 40%;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 16px;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.19);
+    font-weight: bolder;
+}
+
+.conexao__internet span,
+.usuario span {
+    font-weight: lighter;
+}
+
+.conexao__internet,
+.usuario {
+    margin: 1rem;
+    width: auto;
+    text-align: start;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+
+#botao__abrir-chamado {
+    border: 1px solid #FF7A00;
+    border-radius: 5px;
+    background-color: #FF7A00;
+    color: #FFFF;
+    width: 16rem;
+    padding: 1rem;
+    font-size: 1.7rem;
+    margin: 2% 3% 0% 0%;
+}
+
+.form_chamado {
+    display: none;
+    position: absolute;
+    margin: 0% 0% 0% 0%;
+    background-color: rgba(44, 40, 40, 0.856);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    section {
+        width: calc(100vw - 270px);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100vw;
+    }
+}

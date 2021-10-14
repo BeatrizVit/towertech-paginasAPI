@@ -1,0 +1,265 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*  --------------------------------------------------------  */
+/*!  Navbar  */
+.logo {
+    margin-top: 2.5%;
+    margin-left: 25px;
+}
+
+.navbar-font {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 18.75px;
+    color: #ffffff;
+}
+
+.navbar-btn-font {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 16.41px;
+    color: #000;
+}
+
+.container__navbar {
+    height: 100vh;
+    width: 35rem;
+}
+
+.navbar {
+    height: 100%;
+    width: 100%;
+    padding: 1.5%;
+
+    overflow: auto;
+
+    background-color: #9bb0d3;
+}
+
+.navbar::-webkit-scrollbar {
+    width: 1em;
+}
+
+.navbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar::-webkit-scrollbar-thumb {
+    background-color: #32496f;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-disabilitada {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    padding: 1.5%;
+    background-color: #9bb0d3;
+    /* display: none; */
+}
+
+.navbar-disabilitada::-webkit-scrollbar {
+    width: 1em;
+}
+
+.navbar-disabilitada::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-disabilitada::-webkit-scrollbar-thumb {
+    background-color: #32496f;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.header-auxiliar {
+    background-color: #32496f;
+    width: 100%;
+}
+
+.navbar__btn-menu-hamburguer {
+    padding: 2.5%;
+    display: none;
+}
+
+.navbar hr {
+    margin-top: 5%;
+    margin-bottom: 3%;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar-disabilitada hr {
+    margin-top: 5%;
+    margin-bottom: 3%;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/*!  Navbar - Sessão do Usuario  */
+.navbar__sessao-usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__sessao-usuario .navbar-font {
+    margin-top: 2.5%;
+}
+
+.sessao-usuario__imagem-perfil {
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*!  Navbar - Sessão de Cadastro  */
+.navbar__sessao-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar__sessao-cadastro .navbar-font {
+    font-size: 1.5rem;
+    line-height: 14.06px;
+}
+
+.sessao-cadastro__btn-cadastrar {
+    width: 100%;
+    height: 40px;
+    margin-top: 2.25%;
+    border: 0px;
+    text-align: center;
+
+    background-color: #f89941;
+    transition-duration: 0.35s;
+    cursor: pointer;
+}
+
+.sessao-cadastro__btn-cadastrar:hover {
+    transition-duration: 0.35s;
+    transform: translateY(-1px);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*!  Navbar - Sessão de Componentes (Computadores ou Torres) */
+.navbar__sessao-componentes .navbar-font {
+    font-size: 1.5rem;
+    line-height: 14.06px;
+    margin-bottom: 2.5%;
+}
+
+.sessao-componentes__btn-torre {
+    margin-bottom: 2.5%;
+    width: 100%;
+    height: 5.5rem;
+    border: 0px;
+    padding-left: 3%;
+    text-align: left;
+
+    background-color: #cbd8ec;
+    transition-duration: 0.35s;
+    cursor: pointer;
+}
+
+.sessao-componentes__btn-torre:hover {
+    transition-duration: 0.35s;
+    transform: translateY(-1px);
+    background-color: #f89941;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*  --------------------------------------------------------  */
+/*!  Section Formulario  */
+
+@media (max-width: 2560px) {
+    html {
+        font-size: 65.5%;
+    }
+
+    .sessao-componentes__btn-torre {
+        height: 3.3rem;
+    }
+
+    .navbar {
+        display: block;
+        width: 35rem;
+    }
+}
+
+@media (max-width: 1513px) {
+    html {
+        font-size: 65.5%;
+    }
+
+    .sessao-componentes__btn-torre {
+        height: 5.5rem;
+    }
+
+    .navbar {
+        display: block;
+        width: 35rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    html {
+        font-size: 60.5%;
+    }
+
+    .sessao-componentes__btn-torre {
+        height: 5.5rem;
+    }
+
+    .navbar {
+        display: block;
+        width: 35rem;
+    }
+}
+
+@media (max-width: 1338px) {
+    html {
+        font-size: 60.5%;
+    }
+
+    .sessao-componentes__btn-torre {
+        height: 5.5rem;
+    }
+
+    .navbar {
+        display: block;
+        width: 33rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container__navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-disabilitada {
+        display: none;
+    }
+
+    .navbar {
+        /* display: none; */
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar__btn-menu-hamburguer {
+        display: block;
+    }
+}
