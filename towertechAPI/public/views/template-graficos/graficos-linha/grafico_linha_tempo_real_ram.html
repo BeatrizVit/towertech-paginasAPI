@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Grafico de Linha</title>
+</head>
+<style>
+    .container_line_chart {
+        width: 1000px;
+        height: 750px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="container_line_chart">
+        <h1 style="text-align:center">Grafico Tempo Real - RAM</h1>
+        <canvas id="canvas_line_chart"></canvas>
+    </div>
+</body>
+</html>
+<script>
+    const lineChart = document.getElementById("canvas_line_chart").getContext("2d");
+    const dataLineChart = {
+        labels: [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+    ],
+        datasets: [{
+            label: "RAM",
+            data:[
+            66,
+            70,
+            71,
+            95,
+            5,
+            88,
+            82,
+            13,
+            61,
+            70,
+            75,
+            69,
+            15,
+            70,
+            74,
+            40,
+            58,
+            1,
+            85,
+            26,
+            27,
+            60,
+            61,
+            71,
+            68,
+            81,
+            66,
+            28,
+            87,
+            50,
+            40,
+            85,
+            77,
+            45,
+            99,
+            61,
+            36,
+            40,
+            57,
+            94,
+            10,
+            31,
+            92,
+            64,
+            44,
+            56,
+            7,
+            46,
+            77,
+            66,
+            ],
+            fill: false,
+            borderColor: "rgba(251, 133, 0)",
+            tension: 0.1
+        }],
+    };
+
+    const chartConfiguration = {
+        type: "line",
+        data: dataLineChart
+    };
+                
+    const createLineChart = new Chart(lineChart, chartConfiguration);
+                
+</script>

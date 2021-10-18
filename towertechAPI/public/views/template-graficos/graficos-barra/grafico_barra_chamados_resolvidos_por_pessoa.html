@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Grafico de Barra</title>
+</head>
+<style>
+    .container_grafico_barra_turno{
+        width: 1000px;
+        height: 500px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="container_grafico_barra_turno">
+        <h1 style="text-align:center">Quantidade de Chamados por Turno</h1>
+        <canvas id="grafico_barra_turno"></canvas>
+    </div>
+</body>
+</html>
+<script>
+    const barChart = document.getElementById("grafico_barra_turno").getContext("2d");
+
+    const dataBarChart = {
+        labels: [
+            "Manhã",
+            "Tarde",
+            "Noite"],
+        datasets: [{
+            label: "Quantidade de Chamados Não Finalizados",
+            data: [
+                30,
+                13,
+                15
+            ],
+            backgroundColor: "rgba(133, 24, 42)"
+        },
+        {
+        label: "Quantidade de Chamados Finalizados",
+            data: [
+                70,
+                30,
+                20
+            ],
+            backgroundColor: "rgba(0, 180, 216)"
+        }]
+    };
+
+    const chartConfiguration = {
+        type: "bar",
+        data: dataBarChart
+    }
+
+    const createBarChart = new Chart(barChart, chartConfiguration);
+</script>

@@ -42,7 +42,7 @@
     </header>
 
     <section>
-      <form id="login" action="">
+      <form id="login" action="" onsubmit="return entrar()">
         <div class="lo-grid">
             <div class="lo-logo">
               <img src="../imagens/logo_towertech_preta.svg" alt="Logo" />
@@ -73,3 +73,48 @@
     </footer>
   </body>
 </html>
+<script>
+  function entrar() {        
+        var formulario = new URLSearchParams(new FormData(login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.email;
+                    sessionStorage.nome_usuario_meuapp = json.nomeFuncionario;
+                    sessionStorage.fk_empresa_meuapp = json.fkEmpresa;
+
+                     if(json.permissao == "G") {
+                       window.location = "home_gerente.html"
+                     } else {
+                       window.location = "home_analista.html"
+                     }
+
+                /*  console.log(json.permissao);
+                    if(json.permissao == 2) {
+                        console.log("entrou com permissao 2")
+                        window.location = "dash_gerente.html"
+                    } else {
+                      console.log("entrou com outra permissao")
+                    } */
+  
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);                    
+                });
+            }
+        });
+
+        return false;
+    }
+</script>

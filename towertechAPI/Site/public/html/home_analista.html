@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./../css/reset.css" />
+  <link rel="stylesheet" href="../css/home_analista.css" />
+  <link rel="sortcut icon" href="../imagens/icone_aviao.png" />
+  <link rel="stylesheet" href="../css/navbar_sistema2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../JS/navbar.js"></script>
+  <script type="text/javascript" src="../JS/funcoes.js"></script>
+  <script type="text/javascript" src="../JS/funcoes_backend.js"></script>
+  <title>Home Analista</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <div class="he-grid">
+        <div class="logo_menu">
+          <img src="../imagens/TOWER_TECH.png" />
+        </div>
+        <div class="menu_fechado">
+          <img src="../imagens/icone_menu.png" id="menu" onclick="abrirMenuSistema()" />
+        </div>
+      </div>
+    </div>
+
+    <div class="header_desktop">
+      <div class="grid_desktop">
+        <div class="primeira_div">
+          <img src="../imagens/TOWER_TECH.png" id="logo_menu_desktop" alt="" />
+          <img class="img_usuario" src="../imagens/Danilo.png" alt="" class="fernanda" />
+          <h3>Bem Vindo(a), <span id="id_nome_usuario"></span>!</h3>
+        </div>
+        <div class="cadastro">
+          <h5>CADASTRO</h5>
+          <a href="./cad_maquina.html"><button>Cadastrar máquinas</button></a>
+        </div>
+        <div class="localizacao">
+          <h5>LOCALIZAÇÃO</h5>
+          <div class="scrollLocalizacao">
+            <a href="./dash_analista.html">
+              <div onclick="abrir_menu_maquinas()" >
+               
+              </div>
+            </a>
+           
+          </div>
+        </div>
+        <a onclick="logoff()"><i class="fas fa-sign-out-alt"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container__dashboard">
+
+      <h2>ALERTAS</h2>
+
+      <div id="alertas">
+
+        
+
+
+      </div>
+
+
+      <div class="div_historico">
+        <h2>HISTÓRICO DE CHAMADOS</h2>
+        <div class="indice">
+          <h3>Localização</h3>
+          <h3>Máquina</h3>
+          <h3>Data de abertura</h3>
+          <h3>Status</h3>
+        </div>
+        <div class="chamados">
+
+          <div onclick="abrirChamado1()" id="chamado1" class="chamado">
+            <p>Torre Congonhas</p>
+            <p>Máquina X</p>
+            <p>12/09/2021</p>
+            <p>Em aberto</p>
+            <i id="setaBaixo1" class="fas fa-angle-down"></i>
+            <i id="setaCima1" class="fas fa-angle-up"></i>
+          </div>
+
+          <div id="chamadoAberto1" class="chamadoAberto">
+            <div class="ocorrencia">
+              <h3>Ocorrência:</h3>
+              <p>Disco em 96%</p>
+            </div>
+            <div class="descricao">
+              <h3>Descrição:</h3>
+              <p>Disco apresentou 96% da sua capacidade</p>
+            </div>
+            <div class="informacoes">
+              <h3>Analista:</h3>
+              <p>Danilo</p>
+              <h3>Data de conclusão:</h3>
+              <p>xx-x-x--x</p>
+            </div>
+          </div>
+          <div onclick="abrirChamado2()" id="chamado2" class="chamado">
+            <p>Torre Congonhas</p>
+            <p>Máquina X</p>
+            <p>12/09/2021</p>
+            <p>Em aberto</p>
+            <i id="setaBaixo2" class="fas fa-angle-down"></i>
+            <i id="setaCima2" class="fas fa-angle-up"></i>
+          </div>
+
+          <div id="chamadoAberto2" class="chamadoAberto">
+            <div class="ocorrencia">
+              <h3>Ocorrência:</h3>
+              <p>Disco em 96%</p>
+            </div>
+            <div class="descricao">
+              <h3>Descrição:</h3>
+              <p>Disco apresentou 96% da sua capacidade</p>
+            </div>
+            <div class="informacoes">
+              <h3>Analista:</h3>
+              <p>Danilo</p>
+              <h3>Data de conclusão:</h3>
+              <p>xx-x-x--x</p>
+            </div>
+          </div>
+          <div onclick="" id="" class="chamado">
+            <p>Torre Congonhas</p>
+            <p>Máquina X</p>
+            <p>12/09/2021</p>
+            <p>Em aberto</p>
+            <i id="" class="fas fa-angle-down"></i>
+          </div>
+
+          <div id="" class="chamadoAberto">
+            <div class="ocorrencia">
+              <h3>Ocorrência:</h3>
+              <p>Disco em 96%</p>
+            </div>
+            <div class="descricao">
+              <h3>Descrição:</h3>
+              <p>Disco apresentou 96% da sua capacidade</p>
+            </div>
+            <div class="informacoes">
+              <h3>Analista:</h3>
+              <p>Danilo</p>
+              <h3>Data de conclusão:</h3>
+              <p>xx-x-x--x</p>
+            </div>
+          </div>
+          <div onclick="" id="" class="chamado">
+            <p>Torre Congonhas</p>
+            <p>Máquina X</p>
+            <p>12/09/2021</p>
+            <p>Em aberto</p>
+            <i id="" class="fas fa-angle-down"></i>
+          </div>
+
+          <div id="" class="chamadoAberto">
+            <div class="ocorrencia">
+              <h3>Ocorrência:</h3>
+              <p>Disco em 96%</p>
+            </div>
+            <div class="descricao">
+              <h3>Descrição:</h3>
+              <p>Disco apresentou 96% da sua capacidade</p>
+            </div>
+            <div class="informacoes">
+              <h3>Analista:</h3>
+              <p>Danilo</p>
+              <h3>Data de conclusão:</h3>
+              <p>xx-x-x--x</p>
+            </div>
+          </div>
+          <div onclick="" id="" class="chamado">
+            <p>Torre Congonhas</p>
+            <p>Máquina X</p>
+            <p>12/09/2021</p>
+            <p>Em aberto</p>
+            <i id="" class="fas fa-angle-down"></i>
+          </div>
+
+          <div id="" class="chamadoAberto">
+            <div class="ocorrencia">
+              <h3>Ocorrência:</h3>
+              <p>Disco em 96%</p>
+            </div>
+            <div class="descricao">
+              <h3>Descrição:</h3>
+              <p>Disco apresentou 96% da sua capacidade</p>
+            </div>
+            <div class="informacoes">
+              <h3>Analista:</h3>
+              <p>Danilo</p>
+              <h3>Data de conclusão:</h3>
+              <p>xx-x-x--x</p>
+            </div>
+          </div>
+          <div onclick="" id="" class="chamado">
+            <p>Torre Congonhas</p>
+            <p>Máquina X</p>
+            <p>12/09/2021</p>
+            <p>Em aberto</p>
+            <i id="" class="fas fa-angle-down"></i>
+          </div>
+
+          <div id="" class="chamadoAberto">
+            <div class="ocorrencia">
+              <h3>Ocorrência:</h3>
+              <p>Disco em 96%</p>
+            </div>
+            <div class="descricao">
+              <h3>Descrição:</h3>
+              <p>Disco apresentou 96% da sua capacidade</p>
+            </div>
+            <div class="informacoes">
+              <h3>Analista:</h3>
+              <p>Danilo</p>
+              <h3>Data de conclusão:</h3>
+              <p>xx-x-x--x</p>
+            </div>
+          </div>
+          <div onclick="" id="" class="chamado">
+            <p>Torre Congonhas</p>
+            <p>Máquina X</p>
+            <p>12/09/2021</p>
+            <p>Em aberto</p>
+            <i id="" class="fas fa-angle-down"></i>
+          </div>
+
+          <div id="" class="chamadoAberto">
+            <div class="ocorrencia">
+              <h3>Ocorrência:</h3>
+              <p>Disco em 96%</p>
+            </div>
+            <div class="descricao">
+              <h3>Descrição:</h3>
+              <p>Disco apresentou 96% da sua capacidade</p>
+            </div>
+            <div class="informacoes">
+              <h3>Analista:</h3>
+              <p>Danilo</p>
+              <h3>Data de conclusão:</h3>
+              <p>xx-x-x--x</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+</body>
+
+</html>
+<script src="../JS/home_analista.js"></script>
+
+<script>
+  verificar_autenticacao()
+  function passarValor(fkComputador, fkTorre){
+    window.location = "dash_analista.html?minhaVariavel="+fkComputador+fkTorre;
+    }
+
+
+    function get_fk_empresa() {
+        var fkEmpresa = sessionStorage.getItem('fk_empresa_meuapp')
+        qtdComputadores(fkEmpresa)
+    } 
+
+get_fk_empresa()
+
+  function qtdComputadores(fkEmpresa) {
+        fetch(`/usuarios/qtdComputadores/${fkEmpresa}`, { cache: 'no-store' }).then(function (response) {
+            
+            if (response.ok) {                
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                    console.log(resposta);  
+                    for (var i = 0; i < resposta.length; i++) {
+                      alertas.innerHTML += `
+                      
+                      <div class="alerta alerta_laranja" onclick="passarValor(${resposta[i].idComputador}, ${resposta[i].idTorre})">
+                                <h3>Máquina ${resposta[i].idComputador}</h3>
+                                <div class="descricao_alerta">
+                                  <div>
+                                    <h4>Localização</h4>                                    
+                                    <p>${resposta[i].nomeTorre}</p> 
+                                    <p>${resposta[i].cidadeTorre} - ${resposta[i].estadoTorre}</p>
+                                  </div>
+                                  <div>
+                                    <h4>Monitorando</h4>
+                                    <p>CPU, RAM, Disco, Internet, Usuário</p>
+                                  </div>
+                                </div>
+                              </div>`                      
+                    }
+                    qtdTorre(fkEmpresa)
+                    
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados: ${error.message}`);
+            });
+
+        return false;
+    }
+
+
+    
+// // funcao para gerar alertas
+// nomeMaq = idNomeMaq.value = fkComputador.json;
+// nomeTorre.value = 
+// // dados = [];
+// // dadosMonitorados.value = dados;
+
+// function abrirAlerta() {
+//      fetch(/leitura/dadosMonitoramento, { cache: 'no-store' }).then(function (response) { 
+//          if (response.ok) {
+//              response.json().then(function (resposta) {
+//                 console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+//                 resposta.reverse();
+                
+//                 if(cpuPorcentagem.json >= 8000 || ramPorcentagem.json >= 8000 || discoPorcentagem.json >= 8000) {
+//                      function addNewComponent(componentName) {
+//                         document.getElementById(".alertas_critico").innerHTML +=
+//                             '<div class="alerta_vermelho">' +
+//                                 '<h3>Máquina <span id="idNomeMaq">X</span></h3>' + 
+//                                 '<div class="descricao_alerta">' +
+//                                     '<div>' +
+//                                         '<h4>Localização</h4>' +
+//                                         '<p id="nomeTorre" name="nomeTorre">Torre Viracopos</p>' +
+//                                     '</div>' +
+//                                     '<div>' +
+//                                         '<h4>Monitorando</h4>' +
+//                                         '<p id="dadosMonitorados" name="dadosMonitorados">CPU, RAM, Disco, Internet, Usuário</p>' +
+//                                     '</div>'
+//                                 '</div>'
+//                             '</div>' +
+//                             `${componentName}`;
+        
+//                         alerta_vermelho.style.border = "1px solid #FF0000";    
+        
+//                         if(nomeMaq.length[0] > 1) {
+//                             alerta_vermelho.style.border = "1px solid #FF0000";
+//                         }
+        
+//                      } 
+        
+//                 } else if(cpuPorcentagem.json >= 6000 && cpuPorcentagem <= 8000 || ramPorcentagem.json >= 6000 && ramPorcentagem <= 8000 || discoPorcentagem.json >= 6000 && discoPorcentagem <= 8000) {
+//                      function addNewComponent(componentName) {
+//                         document.getElementById(".alertas_atencao").innerHTML +=
+//                             '<div class="alerta_vermelho">' +
+//                                 '<h3>Máquina <span id="idNomeMaq">X</span></h3>' + 
+//                                 '<div class="descricao_alerta">' +
+//                                     '<div>' +
+//                                         '<h4>Localização</h4>' +
+//                                         '<p name="nomeTorre">Torre Viracopos</p>' +
+//                                     '</div>' +
+//                                     '<div>' +
+//                                         '<h4>Monitorando</h4>' +
+//                                         '<p id="dadosMonitorados" name="dadosMonitorados">CPU, RAM, Disco, Internet, Usuário</p>' +
+//                                     '</div>'
+//                                 '</div>'
+//                             '</div>' +
+//                             `${componentName}`;
+        
+//                         alerta_vermelho.style.border = "1px solid #FFA903;";    
+        
+//                         if(nomeMaq.length[0] > 1) {
+//                             alerta_vermelho.style.border = "1px solid #FFA903;";
+//                         }
+        
+//                     }
+                
+//                 }
+                
+//              });
+
+//          } else {
+//              console.error('Nenhum dado encontrado ou erro na API');
+//          }
+//      })
+//          .catch(function (error) {
+//             console.error(`Erro na obtenção dos dados: ${error.message}`);
+//          });
+// }
+
+
+// </script>

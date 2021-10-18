@@ -1,0 +1,272 @@
+html {
+    font-size: 62.5%;
+}
+
+.header_desktop {
+    width: 328px;
+    background-color: #9BB0D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+.grid_desktop {
+    width: 90%;
+    display: flex;
+    height: 95%;
+    flex-direction: column;
+}
+
+
+.primeira_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    justify-content: space-around;
+    color: white;
+}
+
+.primeira_div img {
+    margin-bottom: 4%;
+}
+
+.img_usuario {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+
+.cadastro {
+    margin-top: 4%;
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro button {
+    height: 40px;
+    width: 100%;
+    background-color: #F89941;
+    font-weight: bolder;
+    border: none;
+    margin-top: 2%;
+}
+
+h5 {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1.5%;
+}
+
+.localizacao {
+    height: 54%;
+    border-top: solid 1px white;
+    margin-top: 15px;
+}
+
+.localizacao button {
+    height: 40px;
+    width: 100%;
+    background: #CBD8EC;
+    font-weight: bolder;
+    border: none;
+    margin: 5px 0px 0px 0px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: start;
+    padding-left: 13px;
+    font-size: 1.3rem;
+}
+
+.scrollLocalizacao {
+    overflow: auto;
+    height: 85%;
+}
+
+.scrollLocalizacao::-webkit-scrollbar {
+    display: none;
+}
+
+.torres {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 4%;
+    background-color: #CBD8EC;
+    margin-top: 2%;
+}
+
+.a1 {
+    /* height: 40px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.torres h3,
+.fas fa-angle-down {
+    font: bolder;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.maquinas {
+    display: none;
+    background-color: #E6E9EF;
+    height: 40px;
+}
+
+.grid_desktop i {
+    float: right;
+    font-size: 20px;
+    color: white;
+}
+
+.menu {
+    display: none;
+}
+
+@media (min-width: 1024px){
+    .header_desktop {
+        display: flex;
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid i {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .localizacao {
+        height: 36rem;
+    }
+
+    .header_desktop {
+        width: 270px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu{
+        width: 100wv;
+        height: 60px;
+        background-color: #32496F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .he-grid{
+        width: 80%; 
+        height: 100%; 
+        display: flex;    
+        justify-content: space-between;
+        align-items: center;
+    }
+        
+    .logo_menu img {
+        width: 100%;
+    }
+    
+    .menu_fechado{   
+        width: 22rem; 
+        height: 100%;
+    }
+    
+    .logo_menu {
+        width: 14.4rem;    
+    }
+
+    .menu_fechado{   
+        width: 15%; 
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #iconMenu{
+        width: 25px;
+        display: block;
+    }
+
+    .header_desktop {
+        width: 100vw;
+        text-align: -webkit-center;
+        display: none;
+    }
+
+    .primeira_div {
+        height: auto;
+        margin-top: 5%;
+    }
+
+    #logo_menu_desktop {
+        display: none;
+    }
+        
+    .logo_menu img {
+        width: 100%;
+    }
+    
+    .menu_fechado{   
+        width: 22rem; 
+        height: 100%;
+    }
+    
+    .logo_menu {
+        width: 14.4rem;    
+    }
+
+    .menu_fechado{   
+        width: 15%; 
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #iconMenu{
+        width: 25px;
+        display: block;
+    }
+
+    .header_desktop {
+        width: 100vw;
+        text-align: -webkit-center;
+        display: none;
+    }
+
+    .primeira_div {
+        height: auto;
+        margin-top: 5%;
+    }
+
+    #logo_menu_desktop {
+        display: none;
+    }
+
+    .header_desktop i{
+        margin-bottom: 3%;
+    }
+
+    header {
+        display: block;
+    }
+
+    .cadastro {
+        height: 80px;
+    }
+}
+
+@media (max-width: 425px){
+    .localizacao{
+        margin: 0;
+    }
+}

@@ -12,7 +12,7 @@ function verificar_autenticacao() {
     fk_empresa = sessionStorage.fk_empresa_meuapp;
     
     if (login_usuario == undefined)  {
-       // redirecionar_login();
+       redirecionar_login();
     } else {
         id_fk_empresa.value = sessionStorage.fk_empresa_meuapp;
         b_usuario.innerHTML = nome_usuario;

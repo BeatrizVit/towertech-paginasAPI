@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Grafico de Linha</title>
+</head>
+<style>
+    .container_line_chart {
+        width: 1000px;
+        height: 750px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="container_line_chart">
+        <h1 style="text-align:center">Grafico Tempo Real - CPU</h1>
+        <canvas id="canvas_line_chart"></canvas>
+    </div>
+</body>
+</html>
+<script>
+    const lineChart = document.getElementById("canvas_line_chart").getContext("2d");
+    const dataLineChart = {
+        labels: [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+    ],
+        datasets: [{
+            label: "CPU",
+            data: [
+                22,
+                25,
+                2,
+                5,
+                1,
+                6,
+                46,
+                25,
+                24,
+                44,
+                30,
+                33,
+                34,
+                28,
+                21,
+                16,
+                49,
+                3,
+                28,
+                10,
+                28,
+                32,
+                18,
+                14,
+                17,
+                3,
+                0,
+                36,
+                25,
+                27,
+                15,
+                0,
+                10,
+                22,
+                31,
+                8,
+                24,
+                17,
+                49,
+                20,
+                26,
+                36,
+                43,
+                46, 
+                3,
+                25,
+                24,
+                19,
+                18,
+                13],
+            fill: false,
+            borderColor: "rgba(2, 48, 71)",
+            tension: 0.1
+        }],
+    };
+
+    const chartConfiguration = {
+        type: "line",
+        data: dataLineChart
+    };
+                
+    const createLineChart = new Chart(lineChart, chartConfiguration);
+                
+</script>
